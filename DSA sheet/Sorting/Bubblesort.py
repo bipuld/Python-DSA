@@ -11,7 +11,9 @@ class Sorting():
         n=len(array)
         swap=False
         for i in range(n):
+            # print(i)
             for j in range(0,n-i-1):
+                # print("jjj",j)
                 if array[j]>array[j+1]:
                     array[j],array[j+1]=array[j+1],array[j]
                     swap=True

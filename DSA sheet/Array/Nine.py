@@ -9,12 +9,10 @@ Consider the array { 1, 1, 0, 2, 0 }.
 For the given array the modified array should be {0,0,1,1,2} . 
 '''
 class Solution:
-    
     def rearrange_array(self, arr):
-        
         left_pointer = 0
-    
         for current_pointer in range(len(arr)):
+            print(current_pointer)
             if arr[current_pointer] == 0:
                 arr[current_pointer], arr[left_pointer] = arr[left_pointer], arr[current_pointer]
                 left_pointer += 1
