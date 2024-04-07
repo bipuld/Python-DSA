@@ -6,13 +6,23 @@ You have been given an integer ‘N’. You are supposed to find if the given in
 
 '''
 
+
 def is_perfect(item):
-    for i in range(1,item):
-        if item==i*i:
-            return item
+    left = 1
+    right = item
+    while left <= right:
+        mid = (left + right) // 2
+
+        if (mid * mid) == item:
+            return 1
+        elif mid * mid > item:
+            right=mid-1
+        else:
+            left=mid+1
     return -1
-        
-value=121
+
+
+value = 121
 if is_perfect(value) != -1:
     print("{} is a perfect square".format(value))
 else:

@@ -23,6 +23,7 @@ def merge_array(a1, a2, m, n):
         k -= 1
 
 # Example usage
+
 a1 = [1, 8, 8, 9, 5, 0, 0, 0]  # Increased size to m + n
 a2 = [5, 4, 6, 80]
 m = 4  # Increased to the actual size of a1

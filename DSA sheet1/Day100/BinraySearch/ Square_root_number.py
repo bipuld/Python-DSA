@@ -24,7 +24,7 @@ def square_root(n):
             r = mid - 1
         else:
             l = mid + 1
-            res = mid
+            res = l
     return res
 
 

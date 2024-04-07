@@ -18,7 +18,6 @@ class Searching:
                 lower_index=mid_index+1
             else:
                 upper_index=mid_index-1
-         
         return -1
         
 

@@ -61,7 +61,7 @@ class Solution:
                 low = mid + 1
 
     def guess(self, pick):
-        num = 5  # This is the number we are guessing. Replace it with the actual picked number.
+        num = 5
         if num < pick:
             return 1
         elif num > pick:
